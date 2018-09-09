@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-	int n = 100;// numero maximo
+	int n = 100;
 	
 	long long i, j;
 	i = j = 1;
@@ -14,7 +14,7 @@ int main(){
 		if( j > SHRT_MAX && !so) so = it;
 		if( j > INT_MAX && !io) io = it;
 		if( j < 0 && !lo ) lo = it;
-		cout << it + 1<< " " << j << endl;
+		cout << it + 1 << " " << j << endl;
 		j += i;
 		i = j - i;
 	}
